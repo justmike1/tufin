@@ -31,6 +31,6 @@ func ParseCmdOption(option string) CmdOptions {
 	case "status":
 		return STATUS
 	default:
-		return -1 // or some other sentinel value
+		return -1
 	}
 }
