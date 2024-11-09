@@ -16,7 +16,7 @@ const (
 
 func main() {
 	if len(os.Args) < 2 {
-		log.Println("No command provided. Use 'tufin help' to see available commands.")
+		log.Println("No command provided.")
 		os.Exit(1)
 	}
 
@@ -30,7 +30,7 @@ func main() {
 	case config.STATUS:
 		showStatus()
 	default:
-		log.Println("Unknown command. Use 'tufin help' to see available commands.")
+		log.Println("Unknown command.")
 		os.Exit(1)
 	}
 }
